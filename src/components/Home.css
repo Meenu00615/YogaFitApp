@@ -1,5 +1,5 @@
 .home {
-  background: url(".public/home4.jpg") center/cover no-repeat;
+  background: url("./home4.jpg") center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
 
 @media (max-width: 768px) {
   .home {
-      background: url(".public/home4.jpg") center/cover no-repeat;
+      background: url("./home4.jpg") center/cover no-repeat;
       background-position: center;
   }
 
@@ -33,7 +33,7 @@
 
 @media (max-width: 480px) {
   .home {
-      background: url(".public/home4.jpg") center/contain no-repeat;
+      background: url("./home4.jpg") center/contain no-repeat;
       background-size: cover;
       height: 100vh;
   }
