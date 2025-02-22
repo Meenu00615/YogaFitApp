@@ -1,5 +1,5 @@
 .home {
-  background: url("./home4.jpg") center/cover no-repeat;
+  background: url("/home4.jpg") center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -12,42 +12,41 @@
 
 @media (max-width: 768px) {
   .home {
-      background: url("./home4.jpg") center/cover no-repeat;
-      background-position: center;
+    background: url("/home4.jpg") center/cover no-repeat;
   }
 
   .home-content h1 {
-      font-size: 40px;
+    font-size: 40px;
   }
 
   .home-content p {
-      font-size: 18px;
-      margin: 15px 0;
+    font-size: 18px;
+    margin: 15px 0;
   }
 
   .home-btn {
-      padding: 10px 25px;
-      font-size: 16px;
+    padding: 10px 25px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 480px) {
   .home {
-      background: url("./home4.jpg") center/contain no-repeat;
-      background-size: cover;
-      height: 100vh;
+    background: url("/home4.jpg") center/contain no-repeat;
+    background-size: cover;
+    height: 100vh;
   }
 
   .home-content h1 {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .home-content p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .home-btn {
-      padding: 8px 20px;
-      font-size: 14px;
+    padding: 8px 20px;
+    font-size: 14px;
   }
 }
