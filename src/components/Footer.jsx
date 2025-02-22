@@ -88,14 +88,16 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-bottom">
-        <p>© 2025 YogaFit | All Rights Reserved</p>
-        <div className="footer-bottom-links">
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Cookie Policy</a>
-        </div>
-      </div>
+<div className="footer-bottom">
+  <p>© 2025 YogaFit | All Rights Reserved</p>
+  <p>Developer: Meenu Patel</p> {/* Added this line */}
+  <div className="footer-bottom-links">
+    <a href="#">Terms & Conditions</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Cookie Policy</a>
+  </div>
+</div>
+
     </footer>
   );
 };
