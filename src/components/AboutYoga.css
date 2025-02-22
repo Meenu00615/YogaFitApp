@@ -1,0 +1,35 @@
+.about-yoga {
+  text-align: center;
+  padding: 20px;
+  background: #f5f5f5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-yoga h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-yoga p {
+  font-size: 18px;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-yoga {
+    padding: 15px;
+  }
+
+  .about-yoga h2 {
+    font-size: 24px;
+  }
+
+  .about-yoga p {
+    font-size: 16px;
+    padding: 0 15px; 
+  }
+}

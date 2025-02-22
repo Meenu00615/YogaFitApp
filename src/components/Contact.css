@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  margin-top:70px;
+}
+
+.contact-info {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 50px;
+}
+
+.contact-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contact-details p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+
+.contact-form-container {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+  background: black;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: white;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-group input {
+  width: 50%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.send-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: yellow;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  text-transform: uppercase;
+}
+
+.send-btn:hover {
+  background-color: #f1c40f;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .contact-info, .contact-form-container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .form-group input {
+    width: 100%;
+  }
+}

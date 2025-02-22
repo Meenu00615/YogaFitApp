@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.tutorials-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 90px;
+    background-color: #f4f4f4;
+}
+
+.tutorials-title {
+    font-size: 32px;
+    font-weight: 700; 
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tutorial-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    padding: 10px;
+    text-align: center;
+}
+
+.tutorial-card iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.tutorial-card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #444;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .tutorials-title {
+        font-size: 28px;
+    }
+
+    .cards-container {
+        gap: 15px;
+    }
+
+    .tutorial-card {
+        width: 280px;
+        padding: 8px;
+    }
+
+    .tutorial-card iframe {
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tutorials-container {
+        padding: 15px;
+        margin-top: 70px;
+    }
+
+    .tutorials-title {
+        font-size: 24px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tutorial-card {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .tutorial-card iframe {
+        height: 150px;
+    }
+
+    .tutorial-card h3 {
+        font-size: 14px;
+    }
+}
