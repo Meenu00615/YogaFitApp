@@ -1,16 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
+/* Prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global container styling */
 .about-container {
   font-family: 'Montserrat', sans-serif;
   padding: 50px;
   background: #F8FAFD;
   text-align: center;
-  margin: 40px;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
+/* Title and subtitle */
 .section-title, h2 {
   font-size: 30px;
   font-weight: 700;
@@ -18,21 +30,23 @@
   text-align: center;
 }
 
-.intro-section {
-  margin-bottom: 40px;
-}
-
 .section-subtitle {
   font-size: 18px;
   color: #5A5A5A;
 }
 
+.intro-section {
+  margin-bottom: 40px;
+}
+
+/* Image Styling */
 .intro-image {
   width: 80%;
   margin-top: 20px;
   border-radius: 10px;
 }
 
+/* Objective Section */
 .objective-section {
   background: white;
   padding: 40px;
@@ -43,22 +57,30 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 90%;
+  max-width: 800px;
 }
+
+/* Features Section */
 .features-section {
-  text-align: center; /* Centering the section content */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  margin: 40px auto;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .features-container {
   display: flex;
   justify-content: center;
-  align-items: center; /* Centering all feature boxes */
-  gap: 20px;
+  align-items: center;
   flex-wrap: wrap;
-  width: 100%;
+  gap: 20px;
+  max-width: 100%;
+  padding: 0 10px;
+  overflow-x: hidden;
 }
+
+/* Individual Feature Box */
 .feature-box {
   width: 35%;
   background: rgb(104, 189, 204);
@@ -83,22 +105,27 @@
   margin-top: 10px;
 }
 
+/* Research Section */
 .research-section {
   padding: 40px;
   background: white;
   border-radius: 10px;
   margin: 40px auto;
-  width: 80%;
+  width: 90%;
+  max-width: 800px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
+/* Call-to-Action Section */
 .cta-section {
   padding: 40px;
   background: rgb(116, 209, 220);
   color: white;
   border-radius: 10px;
   text-align: center;
+  width: 90%;
+  max-width: 800px;
 }
 
 .btn-primary {
@@ -109,18 +136,20 @@
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  border: none;
 }
 
 /* Tablet View (768px and below) */
 @media (max-width: 768px) {
   .about-container {
     padding: 30px;
-    margin: 20px;
+    margin: 20px auto;
   }
 
   .features-container {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
   }
 
   .feature-box {
@@ -135,13 +164,11 @@
     font-size: 16px;
   }
 
-  .objective-section {
-    padding: 30px;
-    margin-bottom: 30px;
-  }
-
+  .objective-section,
+  .research-section,
   .cta-section {
     padding: 30px;
+    width: 100%;
   }
 }
 
@@ -149,7 +176,7 @@
 @media (max-width: 480px) {
   .about-container {
     padding: 20px;
-    margin: 10px;
+    margin: 0 auto;
   }
 
   .section-title, h2 {
@@ -162,24 +189,22 @@
 
   .features-container {
     flex-direction: column;
-    align-items: center; /* Centering all feature boxes */
+    align-items: center;
     gap: 15px;
-    padding: 20px;
-    margin: 20px 0;
-
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .features-section {
-    text-align: center; /* Centering title and text */
-      margin: 20px 0;
-
-  }
-  
-  .feature-box {
+    text-align: center;
+    margin: 20px auto;
     width: 100%;
+  }
+
+  .feature-box {
+    width: 90%;
     padding: 20px;
-    
-    text-align: center; /* Ensuring content is centered */
   }
 
   .feature-box img {
@@ -188,9 +213,8 @@
   }
 
   .research-section {
-    width: 100%; /* Ensuring full width on mobile */
-    text-align: center; /* Center-align text */
-    margin: 20px 0;
+    width: 100%;
+    margin: 10px auto;
   }
 
   .btn-primary {
@@ -201,5 +225,6 @@
   .cta-section {
     padding: 20px;
     text-align: center;
+    width: 100%;
   }
 }
