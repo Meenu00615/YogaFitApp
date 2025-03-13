@@ -164,6 +164,8 @@
     flex-direction: column;
     align-items: center; /* Centering all feature boxes */
     gap: 15px;
+    padding: 30px;
+
   }
 
   .features-section {
