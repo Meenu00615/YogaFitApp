@@ -213,8 +213,10 @@ html, body {
   }
 
   .research-section {
-    width: 100%;
-    margin: 10px auto;
+    width: 90%;
+    margin: 10px;
+    align-items: center;
+
   }
 
   .btn-primary {
@@ -225,6 +227,9 @@ html, body {
   .cta-section {
     padding: 20px;
     text-align: center;
+    align-items: center;
     width: 100%;
+    margin: 10px;
+
   }
 }
