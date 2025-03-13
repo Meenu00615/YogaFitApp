@@ -32,7 +32,7 @@ const AboutUs = () => {
           </div>
 
           <div className="feature-box">
-  <a href="https://github.com/Meenu00615/YogaFit" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/Meenu00615/YogaFit">
     <h3>Academic Contribution</h3>
     <p>Published research on AI and ML for health and wellness.</p>
   </a>
