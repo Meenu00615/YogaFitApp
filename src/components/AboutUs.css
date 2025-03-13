@@ -7,6 +7,7 @@
   text-align: center;
   margin: 40px;
 }
+
 .section-title, h2 {
   font-size: 30px;
   font-weight: 700;
@@ -98,18 +99,75 @@
   margin-top: 10px;
 }
 
+/* Tablet View (768px and below) */
 @media (max-width: 768px) {
+  .about-container {
+    padding: 30px;
+    margin: 20px;
+  }
+
   .features-container {
     flex-direction: column;
+    align-items: center;
   }
 
   .feature-box {
-    width: 70%;
+    width: 80%;
   }
-    .objective-section {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
+
+  .section-title, h2 {
+    font-size: 26px;
+  }
+
+  .section-subtitle, .feature-box p {
+    font-size: 16px;
+  }
+
+  .objective-section {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  .cta-section {
+    padding: 30px;
+  }
+}
+
+/* Mobile View (480px and below) */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .section-title, h2 {
+    font-size: 22px;
+  }
+
+  .section-subtitle, .feature-box p {
+    font-size: 14px;
+  }
+
+  .features-container {
+    gap: 15px;
+  }
+
+  .feature-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .feature-box img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .btn-primary {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .cta-section {
+    padding: 20px;
   }
 }
