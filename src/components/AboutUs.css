@@ -165,12 +165,14 @@
     align-items: center; /* Centering all feature boxes */
     gap: 15px;
     padding: 20px;
-    margin: 20px;
+    margin: 20px 0;
 
   }
 
   .features-section {
     text-align: center; /* Centering title and text */
+      margin: 20px 0;
+
   }
   
   .feature-box {
