@@ -161,20 +161,26 @@
   }
 
   .features-container {
-    gap: 15px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centering all feature boxes */
+    gap: 15px;
   }
 
   .feature-box {
     width: 100%;
     padding: 20px;
+    text-align: center; /* Ensuring content is centered */
   }
 
   .feature-box img {
     width: 60px;
     height: 60px;
+  }
+
+  .research-section {
+    width: 100%; /* Ensuring full width on mobile */
+    text-align: center; /* Center-align text */
+    margin: 20px 0;
   }
 
   .btn-primary {
@@ -184,5 +190,6 @@
 
   .cta-section {
     padding: 20px;
+    text-align: center;
   }
 }
